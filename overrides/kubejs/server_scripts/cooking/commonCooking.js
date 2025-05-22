@@ -18,6 +18,9 @@ ServerEvents.recipes(e => {
     e.remove({output: 'createfood:vinegar_bucket'})
     e.replaceInput({id: "createfood:create/mixing/vinegar_from_mixing_water"}, "#forge:fruits", "3x #forge:apple")
 
+    e.remove('createfood:minecraft/crafting/diced_onion_from_crafting')
+    e.remove('createfood:minecraft/crafting/diced_tomato_from_crafting')
+
     e.remove('create_bic_bit:mixing/sunflower_seeds_recipe')
     e.custom({
         "type": "ratatouille:threshing",
