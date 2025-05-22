@@ -3,7 +3,7 @@ const possibleIngredient =
     'chicken': "createfood:chicken_patty",
     'beef': "farmersdelight:beef_patty",
     'cheese': "createfood:cheese_slice",
-    'onion': "createfood:diced_onion",
+    'onion': "createfood:sliced_onion",
     'bacon': "farmersdelight:cooked_bacon",
     'lettuce': "farmersdelight:cabbage_leaf",
     'tomato': "createfood:sliced_tomato",
@@ -39,7 +39,7 @@ ServerEvents.recipes(e => {
     e.replaceInput({type: "create:deploying", mod: "createfood", input: "#forge:salad_ingredients"}, "#forge:salad_ingredients", "farmersdelight:cabbage_leaf")
     e.replaceInput({type: "create:deploying", mod: "createfood", input: "#forge:cheese"}, "#forge:cheese", "#forge:cheese_slice")
     e.replaceInput({type: "create:deploying", mod: "createfood", input: "#forge:tomato"}, "#forge:tomato", "createfood:sliced_tomato")
-    e.replaceInput({type: "create:deploying", mod: "createfood", input: "#forge:onion"}, "#forge:onion", "createfood:diced_onion")
+    e.replaceInput({type: "create:deploying", mod: "createfood", input: "#forge:onion"}, "#forge:onion", "createfood:sliced_onion")
     e.replaceInput({type: "create:deploying", mod: "createfood", input: "#forge:cooked_pork"}, "#forge:cooked_pork", "farmersdelight:cooked_bacon")
     e.replaceInput({type: "create:deploying", mod: "createfood", input: "#forge:cooked_beef_or_vegan"}, "#forge:cooked_beef_or_vegan", "farmersdelight:beef_patty")
     // few fixes

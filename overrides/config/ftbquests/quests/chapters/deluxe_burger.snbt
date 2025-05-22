@@ -663,11 +663,11 @@
 		}
 		{
 			dependencies: ["5DEC00C75E519A48"]
-			icon: "createfood:diced_onion"
+			icon: "createfood:sliced_onion"
 			id: "5450A9CB2CF14B69"
 			tasks: [{
 				id: "6280E2C1FB82611D"
-				title: "Diced Onion"
+				title: "Sliced Onion"
 				type: "checkmark"
 			}]
 			x: 18.0d
