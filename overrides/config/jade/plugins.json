@@ -54,6 +54,26 @@
   "create_mechanical_chicken": {
     "data": true
   },
+  "jade": {
+    "coordinates.rel": false,
+    "distance": false,
+    "block_face": false,
+    "coordinates": false,
+    "registry_name": "OFF",
+    "mod_name": true
+  },
+  "quality_food": {
+    "quality": true
+  },
+  "lootr": {
+    "info": true
+  },
+  "balm": {
+    "jade": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
   "create_mechanical_spawner": {
     "spawner_data": true
   },
@@ -70,14 +90,6 @@
   "supplementaries": {
     "hat_stand": true
   },
-  "jade": {
-    "coordinates.rel": false,
-    "distance": false,
-    "block_face": false,
-    "coordinates": false,
-    "registry_name": "OFF",
-    "mod_name": true
-  },
   "dynamictrees": {
     "rooty_water": true,
     "pod": true,
@@ -85,13 +97,29 @@
     "rooty": true,
     "branch": true
   },
+  "create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "crafting_blueprint": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "waystones": {
     "waystone": true
   },
-  "quality_food": {
-    "quality": true
-  },
   "corpse": {
     "corpse": true
+  },
+  "cookingforblockheads": {
+    "fridge": true,
+    "oven": true,
+    "sink": true,
+    "preservation_chamber": true,
+    "milk_jar": true,
+    "toaster": true
   }
 }
