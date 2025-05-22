@@ -10,9 +10,9 @@
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "burgifiedMODS",
-  "version": "0.8.1",
-  "author": "",
+  "name": "Create: Burgified",
+  "version": "0.9",
+  "author": "BennBolton",
   "files": [
     {
       "projectID": 351441,
