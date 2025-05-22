@@ -49,7 +49,7 @@ ServerEvents.recipes(e => {
     e.recipes.create.mixing(Fluid.of("create_bic_bit:ketchup", 250), [Fluid.of("create_central_kitchen:tomato_sauce", 200), Item.of("sugar", 2), Fluid.of("createfood:vinegar", 50), "createfood:salt", "create_bic_bit:crushed_nether_wart"]).heated()
     // mayonaise
     e.remove({id: "create_bic_bit:mixing/mayonnaise_recipe"})
-    e.recipes.create.mixing(Fluid.of("create_bic_bit:mayonnaise", 250), [Fluid.of("ratatouille:egg_yolk", 100), "#forge:salt", Fluid.of("createfood:vegetable_oil", 100), Fluid.of("createfood:vinegar", 50)]).heated()
+    e.recipes.create.mixing(Fluid.of("create_bic_bit:mayonnaise", 200), [Fluid.of("ratatouille:egg_yolk", 100), "#forge:salt", Fluid.of("createfood:vegetable_oil", 100)]).heated()
     // cheese
     e.remove({output: "createfood:cheese_block"})
     e.recipes.create.compacting("createfood:cheese_block", [Fluid.of("create_bic_bit:curdled_milk", 500), "createfood:salt"])
