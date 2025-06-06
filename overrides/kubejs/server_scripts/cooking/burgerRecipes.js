@@ -18,20 +18,20 @@ ServerEvents.recipes(e => {
         // remove all crafting grid recipes
         e.remove([{output: burg, type: "crafting_shaped"}, {output: burg, type: "crafting_shapeless"}])
         // get ingredients
-        let ingredients = []
-        for (let ing in possibleIngredient) {
-            if (burg.includes(ing)) {
-                ingredients.push(ing)
-            }
-        }
-        if (ingredients.length < 2) {continue}
-        if (burg.includes('ham') || !(ingredients.some(item => ['beef', 'chicken'].includes(item)))) {ingredients.unshift('beef')}
-        // make sequenced recipe
-        let steps = ingredients.map(i => {return e.recipes.create.deploying('createfood:beef_bun', ['createfood:beef_bun', possibleIngredient[i]])})
-        if (burg.includes('burger')) {
-            steps.push(e.recipes.create.deploying('createfood:beef_bun', ['createfood:beef_bun', "createfood:bun"]))
-        }
-        e.recipes.create.sequenced_assembly(burg, 'createfood:bun', steps).transitionalItem("createfood:beef_bun").loops(1)
+        // let ingredients = []
+        // for (let ing in possibleIngredient) {
+        //     if (burg.includes(ing)) {
+        //         ingredients.push(ing)
+        //     }
+        // }
+        // if (ingredients.length < 2) {continue}
+        // if (burg.includes('ham') || !(ingredients.some(item => ['beef', 'chicken'].includes(item)))) {ingredients.unshift('beef')}
+        // // make sequenced recipe
+        // let steps = ingredients.map(i => {return e.recipes.create.deploying('createfood:beef_bun', ['createfood:beef_bun', possibleIngredient[i]])})
+        // if (burg.includes('burger')) {
+        //     steps.push(e.recipes.create.deploying('createfood:beef_bun', ['createfood:beef_bun', "createfood:bun"]))
+        // }
+        // e.recipes.create.sequenced_assembly(burg, 'createfood:bun', steps).transitionalItem("createfood:beef_bun").loops(1)
         
     }
 
@@ -44,7 +44,10 @@ ServerEvents.recipes(e => {
     e.replaceInput({type: "create:deploying", mod: "createfood", input: "#forge:cooked_beef_or_vegan"}, "#forge:cooked_beef_or_vegan", "farmersdelight:beef_patty")
     // few fixes
     e.replaceOutput({id: "createfood:create/deploying/cheese_and_beef_bun_onion_bacon_lettuce_from_deploying"}, 'createfood:cheese_and_beef_bun_onion_bacon', 'createfood:cheese_and_beef_bun_onion_bacon_lettuce')
+    e.replaceOutput({id: "createfood:create/deploying/cheese_and_beef_bun_onion_bacon_lettuce_from_deploying_alt"}, 'createfood:cheese_and_beef_bun_onion_bacon', 'createfood:cheese_and_beef_bun_onion_bacon_lettuce')
     e.remove({id: "create_central_kitchen:sequenced_assembly/hamburger"})
+    // few additions
+    e.recipes.create.deploying('createfood:cheese_and_beef_bun_bacon_lettuce_tomato', ['createfood:cheese_and_beef_bun_lettuce_tomato', 'farmersdelight:cooked_bacon'])
 
     // deluxe burger
     let transitional = 'createfood:cheese_and_chicken_bun_lettuce_tomato'
