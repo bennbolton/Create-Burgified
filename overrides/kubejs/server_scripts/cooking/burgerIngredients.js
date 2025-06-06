@@ -7,7 +7,7 @@ ServerEvents.recipes(e => {
     e.recipes.create.compacting(Item.of('createfood:unbreaded_chicken_patty'), Item.of('createfood:shredded_chicken', 2))
     // raw chicken patty
     // e.recipes.create.mixing('kubejs:raw_chicken_patty', ['createfood:unbreaded_chicken_patty', Fluid.of('kubejs:liquid_egg', 250), 'kubejs:breadcrumbs'])
-    e.recipes.create.mixing('kubejs:raw_chicken_patty', ['createfood:unbreaded_chicken_patty', Fluid.of(global.liquidEgg, 250), global.breadcrumbs])
+    e.recipes.create.mixing('kubejs:raw_chicken_patty', ['createfood:unbreaded_chicken_patty', Fluid.of(global.liquidEgg, 100), global.breadcrumbs])
     // chicken patty
     e.remove({output: "createfood:chicken_patty"})
     e.custom({
@@ -27,7 +27,7 @@ ServerEvents.recipes(e => {
     // ~~~~ Beef Pipeline ~~~~~
     e.replaceInput({id: "create:mixing/mince_meat"}, "#ratatouille:raw_meat", "minecraft:beef")
     e.remove({output: "farmersdelight:minced_beef"})
-    e.recipes.create.compacting("farmersdelight:minced_beef", [Fluid.of("ratatouille:mince_meat", 250), Fluid.of("ratatouille:egg_yolk", 250), "kubejs:breadcrumbs"])
+    e.recipes.create.compacting("farmersdelight:minced_beef", [Fluid.of("ratatouille:mince_meat", 250), Fluid.of("ratatouille:egg_yolk", 100), "kubejs:breadcrumbs"])
     // e.custom({
     //     type: "ratatouille:squeezing",
     //     ingredients: [
