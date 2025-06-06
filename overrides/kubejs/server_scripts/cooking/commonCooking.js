@@ -56,6 +56,8 @@ ServerEvents.recipes(e => {
     // cheese
     e.remove({output: "createfood:cheese_block"})
     e.recipes.create.compacting("createfood:cheese_block", [Fluid.of("create_bic_bit:curdled_milk", 500), "createfood:salt"])
+    // fried egg
+    e.remove({output: 'naturalist:cooked_egg'})
 
     // peanut butter
     e.recipes.create.emptying([Fluid.of("kubejs:peanut_butter", 250), "minecraft:glass_bottle"], "delightful:nut_butter_bottle")
