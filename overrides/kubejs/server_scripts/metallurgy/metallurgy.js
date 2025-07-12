@@ -13,4 +13,7 @@ ServerEvents.recipes(e => {
 
     // copper metling fix
     // e.recipes.createmetallurgy.melting(Fluid.of("createmetallurgy:molten_copper", 90))
+
+    // Foundry Mixer
+    e.recipes.create.milling(Item.of("create:powdered_obsidian").withChance(0.75), "minecraft:obsidian")
 })
